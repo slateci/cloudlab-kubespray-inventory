@@ -50,7 +50,7 @@ Which can then be used with kubespray like so:
 `cd ../kubespray && ansible-playbook -i ../cloudlab-kubespray-inventory/inventory/cluster0/hosts.yaml --become --become-user=root -u emerso0 cluster.yml`
 
 Then registered with SLATE like so:
-`cd ../slate-ansible && ansible-playbook -i ../cloudlab-kubespray-inventory/inventory/cluster0/hosts.yaml -u emerso0 -e 'slate_cli_token=TOKEN' -e 'slate_cli_endpoint=https://api.slateci.io:443' site.yml`
+`cd ../slate-ansible && ansible-playbook -i ../cloudlab-kubespray-inventory/inventory/cluster0/hosts.yaml -u emerso0 -e 'slate_cli_token=TOKEN' -e 'slate_cli_endpoint=https://api.slateci.io:443' --become --become-user=root site.yml`
 
 ## Files
 - `30-node-cluster.py`: generates the `30-cluster-bring-up` profile using `geni-lib`.
