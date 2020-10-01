@@ -7,4 +7,5 @@ Generates a kubespray inventory file for experiments based off of the [30-cluste
 See `./generate-kubespray-inventory.py -h` for information.
 
 ## Files
-`30-node-cluster.py`: generates the `30-cluster-bring-up` profile using `geni-lib`.
+- `30-node-cluster.py`: generates the `30-cluster-bring-up` profile using `geni-lib`.
+- `rpc.py`: library to communicate with CloudLab
